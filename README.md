@@ -15,3 +15,6 @@ Courier delivers repaired devices one by one back to the clients from his buffer
 ### Solution
 My solution to this problem is based on producer-consumer problem using Semaphores.
 I created three buffers: Clients - Order Worker buffer (N - 1), Order Worker - Repair Workers (1 - 3) buffer and Repair Workers - Delivery Man buffer (3-1) and synchronized all threads to use these different buffers securely and communicate with each other making the process comes full circle.
+
+#### Simulation for 5 clients and 2 iterations
+<img src="./example.png" width=100% height=100%>
