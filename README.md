@@ -13,6 +13,4 @@ Once repaired, the repairman hands it over to a courier for shipment back to the
 
 ### Solution
 My solution to this problem is based on producer-consumer problem using Semaphores.
-I created three buffors: Clients - Order Worker buffor (N - 1), Order Worker - Repair Workers (1 - 3) buffor and Repair Workers - Delivery Man buffor (3-1) and synchronized all threads to work together. <br>
-
-The full process comes full circle: customers, after submitting the equipment for repair, wait for it to be returned by delivery man and then end their threads.
+I created three buffors: Clients - Order Worker buffor (N - 1), Order Worker - Repair Workers (1 - 3) buffor and Repair Workers - Delivery Man buffor (3-1) and synchronized all threads to use these different buffers securely and communicate with each other making the process comes full circle.
